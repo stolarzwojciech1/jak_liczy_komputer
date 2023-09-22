@@ -6,20 +6,27 @@ import Stuff from "./Stuff";
 class Main extends Component {
 render()  {
 return (
+
+
     <HashRouter>
 <div>
 <h1>Prosta aplikacja jednostronowa</h1>
 <ul className="header">
 <li><NavLink to ="/">Strona główna</NavLink></li>
 <li><NavLink to ="/stuff">Opis</NavLink></li>
-<li><a href="/contact">Contact</a></li>
 
-<Route exact path="/" component={Home}/>
-<Route path="/stuff" component={Stuff}/>
+<li><a href="/contact">Contact</a></li>
 
 </ul>
 
+
+
 <div className="content">
+    
+
+
+<Route exact path="/" component={Home}/>
+<Route path="/stuff" component={Stuff}/>
 
 
 
